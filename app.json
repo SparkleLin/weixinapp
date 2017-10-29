@@ -1,0 +1,39 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/contact/contact",
+    "pages/maintenance/maintenance"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "手工蚕丝被",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999",
+    "selectedColor": "#fb5d5d",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_active.png",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/maintenance/maintenance",
+        "iconPath": "images/maintenance.png",
+        "selectedIconPath": "images/maintenance_active.png",
+        "text": "保养"
+      },
+      {
+        "pagePath": "pages/contact/contact",
+        "iconPath": "images/contact.png",
+        "selectedIconPath": "images/contact_active.png",
+        "text": "联系"
+      }
+    ]
+  }
+}
