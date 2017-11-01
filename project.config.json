@@ -12,8 +12,14 @@
 	"projectname": "%E5%8D%97%E9%80%9A%E6%89%8B%E5%B7%A5%E8%9A%95%E4%B8%9D%E8%A2%AB",
 	"condition": {
 		"weapp": {
-			"current": -1,
-			"list": []
+			"current": 0,
+			"list": [
+				{
+					"id": -1,
+					"name": "contact",
+					"pathName": "pages/contact/contact"
+				}
+			]
 		},
 		"search": {
 			"current": -1,

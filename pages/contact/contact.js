@@ -5,7 +5,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
   },
 
   /**
@@ -62,5 +61,33 @@ Page({
    */
   onShareAppMessage: function () {
   
+  },
+
+  onContactPhoneTaped: function(event) 
+  {
+    var phoneNumber = event.currentTarget.dataset.phoneNumber;
+    wx.showActionSheet({
+      itemList: ["拨打电话", "添加联系人"],
+      success: function(res)
+      {
+        switch(res.tapIndex)
+        {
+          case 0: //拨打电话
+            wx.makePhoneCall({
+              phoneNumber: phoneNumber,
+            });
+            break;
+          default:
+            wx.addPhoneContact({
+              firstName: "手工蚕丝被",
+              mobilePhoneNumber: phoneNumber
+            });
+        }
+      },
+      fail: function(res)
+      {
+        // do nothing for now
+      }
+    })
   }
 })

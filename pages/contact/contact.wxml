@@ -1,2 +1,9 @@
 <!--pages/contact/contact.wxml-->
-<text>pages/contact/contact.wxml</text>
+<view class="contact_content">
+  <view class="contact_phone" bindtap="onContactPhoneTaped" data-phone-number="18958089971">
+  <view>联系电话:</view>
+  <text class="phone_num">1895808997</text>
+  </view>
+
+  <view class="">
+</view>
